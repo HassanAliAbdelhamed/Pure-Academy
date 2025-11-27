@@ -1,0 +1,483 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>أكاديمية بيور - قروبات قنوات خاصة لتداول العقود الآجلة SPX</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="icon" type="image/png" href="./assets/Logo.png" />
+    <link rel="shortcut icon" href="./assets/Logo.png" />
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@200..1000&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        * {
+            font-family: "Cairo", sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Cairo', sans-serif;
+            direction: rtl;
+        }
+        
+        @import url('https://fonts.googleapis.com/css2?family=Cairo:wght@400;500;600;700&display=swap');
+        
+        .bg-primary-50 { background-color: #f0f4ff; }
+        .bg-primary-100 { background-color: #e0e9ff; }
+        .bg-primary-300 { background-color: #b3d4ff; }
+        .bg-primary-400 { background-color: #80b3ff; }
+        .bg-primary-500 { background-color: #4d92ff; }
+        .bg-primary-600 { background-color: #1a71ff; }
+        .bg-primary-700 { background-color: #1559db; }
+        .bg-primary-800 { background-color: #0d41b7; }
+        
+        .text-primary-300 { color: #b3d4ff; }
+        .text-primary-400 { color: #80b3ff; }
+        .text-primary-500 { color: #4d92ff; }
+        .text-primary-600 { color: #1a71ff; }
+        
+        .border-primary-500 { border-color: #4d92ff; }
+        .border-primary-600 { border-color: #1a71ff; }
+        
+        .hover\:text-primary-400:hover { color: #80b3ff; }
+        
+        .scroll-smooth {
+            scroll-behavior: smooth;
+        }
+        
+        .fill-yellow-400 {
+            fill: #facc15;
+        }
+        
+        .text-yellow-400 {
+            color: #facc15;
+        }
+    </style>
+</head>
+<body class="bg-[#181745] text-white scroll-smooth">
+    <!-- Navigation -->
+    <nav class="sticky top-0 z-50 bg-[#222168] shadow-lg">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-3 sm:py-4 flex justify-between items-center">
+            <div class="flex items-center space-x-2 space-x-reverse">
+                <div class="w-10 h-10 bg-gradient-to-br from-primary-400 to-primary-600 rounded-lg flex items-center justify-center flex-shrink-0">
+                    <img src="./assets/Logo.png" alt="Logo" class="w-8 h-8">
+                </div>
+                <span class="text-base sm:text-lg font-bold text-white hidden sm:inline">أكاديمية بيور</span>
+            </div>
+            <a href="#packages" class="bg-gradient-to-r from-primary-500 to-primary-600 hover:from-primary-600 hover:to-primary-700 text-white px-4 sm:px-6 py-2 rounded-lg transition transform hover:scale-105 font-semibold text-sm sm:text-base">
+                اشترك الآن
+            </a>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="relative bg-gradient-to-b from-[#181745] via-[#1a1853] to-[#181745] text-white overflow-hidden pt-12 pb-16 sm:pt-20 sm:pb-28">
+        <div class="absolute inset-0 opacity-10">
+            <div class="absolute top-0 right-0 w-64 h-64 sm:w-96 sm:h-96 bg-primary-300 rounded-full blur-3xl"></div>
+            <div class="absolute bottom-0 left-0 w-64 h-64 sm:w-96 sm:h-96 bg-blue-300 rounded-full blur-3xl"></div>
+        </div>
+
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 items-center">
+                <div class="space-y-6 sm:space-y-8">
+                    <h1 class="text-3xl sm:text-4xl md:text-5xl font-bold leading-tight">
+                        قروبات قنوات خاصة لتداول العقود الآجلة SPX
+                    </h1>
+                    <p class="text-base sm:text-lg md:text-xl text-gray-200 leading-relaxed">
+                        انضم إلى مجتمع المتداولين المحترفين واحصل على إشارات دقيقة وتحليلات متخصصة يومياً لتحقيق أرباح مستقرة
+                    </p>
+                    <div class="flex flex-col sm:flex-row gap-4 pt-4">
+                        <a href="#packages" class="bg-gradient-to-r from-primary-500 to-primary-600 hover:from-primary-600 hover:to-primary-700 text-white px-6 sm:px-8 py-3 sm:py-4 rounded-lg font-semibold transition transform hover:scale-105 flex items-center justify-center gap-2 text-sm sm:text-base">
+                            ابدأ الآن
+                            <i class="fas fa-chevron-left"></i>
+                        </a>
+                        <button class="border-2 border-primary-500 text-primary-300 hover:bg-primary-500 hover:text-white px-6 sm:px-8 py-3 sm:py-4 rounded-lg font-semibold transition duration-300 text-sm sm:text-base">
+                            تعرف على المزيد
+                        </button>
+                    </div>
+                </div>
+                <div class="relative mt-8 lg:mt-0">
+                    <div class="bg-gradient-to-br from-primary-400 via-primary-500 to-primary-700 rounded-2xl p-6 sm:p-8 text-white shadow-2xl">
+                        <div class="space-y-4 sm:space-y-5">
+                            <div class="flex items-center gap-3 sm:gap-4">
+                                <i class="fas fa-chart-line text-2xl flex-shrink-0"></i>
+                                <span class="text-base sm:text-lg font-semibold">عائد متوسط 15-25% شهرياً</span>
+                            </div>
+                            <div class="flex items-center gap-3 sm:gap-4">
+                                <i class="fas fa-users text-2xl flex-shrink-0"></i>
+                                <span class="text-base sm:text-lg font-semibold">+5000 متداول نشط</span>
+                            </div>
+                            <div class="flex items-center gap-3 sm:gap-4">
+                                <i class="fas fa-bolt text-2xl flex-shrink-0"></i>
+                                <span class="text-base sm:text-lg font-semibold">إشارات يومية موثوقة</span>
+                            </div>
+                            <div class="flex items-center gap-3 sm:gap-4">
+                                <i class="fas fa-star text-2xl flex-shrink-0"></i>
+                                <span class="text-base sm:text-lg font-semibold">تقييم 4.9/5 نجوم</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Hero Image -->
+    <div class="flex justify-center items-center py-8 sm:py-12 px-4 bg-[#181745]">
+        <img src="./assets/Hero.jpg" alt="Hero" class="w-full max-w-5xl h-auto rounded-2xl shadow-2xl">
+    </div>
+
+    <!-- Benefits Section -->
+    <section class="py-16 sm:py-20 bg-[#181745]">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12 sm:mb-16">
+                <h2 class="text-2xl sm:text-3xl md:text-4xl font-bold text-white mb-3 sm:mb-4">لماذا تختار قروباتنا؟</h2>
+                <p class="text-base sm:text-lg md:text-xl text-gray-300">مزايا تجعل تجربتك استثمارية فريدة</p>
+            </div>
+
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 sm:gap-8">
+                <!-- Benefit 1 -->
+                <div class="bg-white rounded-xl p-6 sm:p-8 shadow-lg hover:shadow-xl transition transform hover:scale-105">
+                    <div class="bg-primary-100 w-14 h-14 rounded-lg flex items-center justify-center mb-4 flex-shrink-0">
+                        <i class="fas fa-chart-line text-primary-600 text-2xl"></i>
+                    </div>
+                    <h3 class="text-base sm:text-lg font-bold text-gray-900 mb-2">إشارات دقيقة</h3>
+                    <p class="text-sm sm:text-base text-gray-600">نحصل على إشارات يومية محلّلة بعناية من قبل خبراء متخصصين في العقود الآجلة</p>
+                </div>
+
+                <!-- Benefit 2 -->
+                <div class="bg-white rounded-xl p-6 sm:p-8 shadow-lg hover:shadow-xl transition transform hover:scale-105">
+                    <div class="bg-primary-100 w-14 h-14 rounded-lg flex items-center justify-center mb-4 flex-shrink-0">
+                        <i class="fas fa-users text-primary-600 text-2xl"></i>
+                    </div>
+                    <h3 class="text-base sm:text-lg font-bold text-gray-900 mb-2">مجتمع فعّال</h3>
+                    <p class="text-sm sm:text-base text-gray-600">انضم إلى مجتمع متداولين متقدمين وتعلم من تجاربهم ومعارفهم</p>
+                </div>
+
+                <!-- Benefit 3 -->
+                <div class="bg-white rounded-xl p-6 sm:p-8 shadow-lg hover:shadow-xl transition transform hover:scale-105">
+                    <div class="bg-primary-100 w-14 h-14 rounded-lg flex items-center justify-center mb-4 flex-shrink-0">
+                        <i class="fas fa-bolt text-primary-600 text-2xl"></i>
+                    </div>
+                    <h3 class="text-base sm:text-lg font-bold text-gray-900 mb-2">دعم فوري</h3>
+                    <p class="text-sm sm:text-base text-gray-600">احصل على إجابات سريعة ودعم كامل من الفريق المتخصص</p>
+                </div>
+
+                <!-- Benefit 4 -->
+                <div class="bg-white rounded-xl p-6 sm:p-8 shadow-lg hover:shadow-xl transition transform hover:scale-105">
+                    <div class="bg-primary-100 w-14 h-14 rounded-lg flex items-center justify-center mb-4 flex-shrink-0">
+                        <i class="fas fa-check text-primary-600 text-2xl"></i>
+                    </div>
+                    <h3 class="text-base sm:text-lg font-bold text-gray-900 mb-2">استراتيجيات مثبتة</h3>
+                    <p class="text-sm sm:text-base text-gray-600">استراتيجيات مختبرة وموثقة برسوم بيانية حقيقية وبيانات تاريخية</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="py-16 sm:py-20 bg-[#181745]">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12 sm:mb-16">
+                <h2 class="text-2xl sm:text-3xl md:text-4xl font-bold text-white mb-3 sm:mb-4">آراء المشتركين</h2>
+                <p class="text-base sm:text-lg md:text-xl text-gray-300">شهادات حقيقية من متداولينا الناجحين</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8">
+                <!-- Testimonial 1 -->
+                <div class="bg-gray-50 rounded-xl p-6 sm:p-8 shadow-lg hover:shadow-xl transition">
+                    <div class="flex items-center gap-4 mb-4">
+                        <img src="https://images.pexels.com/photos/220453/pexels-photo-220453.jpeg" alt="محمد أحمد" class="w-12 h-12 rounded-full object-cover flex-shrink-0">
+                        <div class="text-right">
+                            <h3 class="font-bold text-gray-900 text-sm sm:text-base">محمد أحمد</h3>
+                            <p class="text-xs sm:text-sm text-gray-600">متداول محترف</p>
+                        </div>
+                    </div>
+                    <div class="flex gap-1 mb-4 justify-end">
+                        <i class="fas fa-star text-yellow-400"></i>
+                        <i class="fas fa-star text-yellow-400"></i>
+                        <i class="fas fa-star text-yellow-400"></i>
+                        <i class="fas fa-star text-yellow-400"></i>
+                        <i class="fas fa-star text-yellow-400"></i>
+                    </div>
+                    <p class="text-sm sm:text-base text-gray-700">الإشارات هنا دقيقة جداً وساعدتني أحقق أرباح مستقرة. الفريق احترافي والدعم ممتاز.</p>
+                </div>
+
+                <!-- Testimonial 2 -->
+                <div class="bg-gray-50 rounded-xl p-6 sm:p-8 shadow-lg hover:shadow-xl transition">
+                    <div class="flex items-center gap-4 mb-4">
+                        <img src="https://images.pexels.com/photos/415829/pexels-photo-415829.jpeg" alt="فاطمة محمود" class="w-12 h-12 rounded-full object-cover flex-shrink-0">
+                        <div class="text-right">
+                            <h3 class="font-bold text-gray-900 text-sm sm:text-base">فاطمة محمود</h3>
+                            <p class="text-xs sm:text-sm text-gray-600">مبتدئة في التداول</p>
+                        </div>
+                    </div>
+                    <div class="flex gap-1 mb-4 justify-end">
+                        <i class="fas fa-star text-yellow-400"></i>
+                        <i class="fas fa-star text-yellow-400"></i>
+                        <i class="fas fa-star text-yellow-400"></i>
+                        <i class="fas fa-star text-yellow-400"></i>
+                        <i class="fas fa-star text-yellow-400"></i>
+                    </div>
+                    <p class="text-sm sm:text-base text-gray-700">بدأت من الصفر، لكن الشرح والإشارات سهلة وواضحة جداً. الآن أتاجر بثقة وأحقق أرباح.</p>
+                </div>
+
+                <!-- Testimonial 3 -->
+                <div class="bg-gray-50 rounded-xl p-6 sm:p-8 shadow-lg hover:shadow-xl transition">
+                    <div class="flex items-center gap-4 mb-4">
+                        <img src="https://images.pexels.com/photos/1181690/pexels-photo-1181690.jpeg" alt="علي سالم" class="w-12 h-12 rounded-full object-cover flex-shrink-0">
+                        <div class="text-right">
+                            <h3 class="font-bold text-gray-900 text-sm sm:text-base">علي سالم</h3>
+                            <p class="text-xs sm:text-sm text-gray-600">متداول خبير</p>
+                        </div>
+                    </div>
+                    <div class="flex gap-1 mb-4 justify-end">
+                        <i class="fas fa-star text-yellow-400"></i>
+                        <i class="fas fa-star text-yellow-400"></i>
+                        <i class="fas fa-star text-yellow-400"></i>
+                        <i class="fas fa-star text-yellow-400"></i>
+                        <i class="fas fa-star text-yellow-400"></i>
+                    </div>
+                    <p class="text-sm sm:text-base text-gray-700">أفضل منصة للإشارات على SPX. الجودة عالية والنتائج متسقة. توصية للجميع.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Payment Image -->
+    <div class="flex justify-center items-center py-8 sm:py-12 px-4 bg-[#181745]">
+        <img src="./assets/Pay.webp" alt="Payment methods" class="w-full max-w-5xl h-auto rounded-2xl shadow-2xl">
+    </div>
+
+    <!-- Packages Section -->
+    <section id="packages" class="py-16 sm:py-20 bg-gradient-to-b from-[#181745] via-[#1a1853] to-[#181745]">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12 sm:mb-16">
+                <h2 class="text-2xl sm:text-3xl md:text-4xl font-bold text-white mb-3 sm:mb-4">اختر الباقة المناسبة</h2>
+                <p class="text-base sm:text-lg md:text-xl text-gray-300">ابدأ رحلتك نحو التداول الناجح</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 sm:gap-8 items-start">
+                <div class="col-span-1 md:col-span-2 lg:col-span-2">
+                    <div class="bg-yellow-400 text-gray-900 text-center py-2 px-4 rounded-t-2xl font-bold text-sm">
+                        الأكثر شيوعاً
+                    </div>
+                    <a href="https://pure-77.com/vAraVDy" target="_blank" rel="noopener noreferrer" class="block overflow-hidden rounded-b-2xl shadow-lg hover:shadow-2xl transition transform hover:scale-105">
+                        <img src="./assets/B1.jpg" alt="Quarterly Package" class="w-full h-auto">
+                    </a>
+                </div>
+                <a href="https://pure-77.com/azqWYGl" target="_blank" rel="noopener noreferrer" class="block rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition transform hover:scale-105">
+                    <img src="./assets/B2.jpg" alt="Six Month Package" class="w-full h-auto">
+                </a>
+                <a href="https://pure-77.com/bwqDwDW" target="_blank" rel="noopener noreferrer" class="block rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition transform hover:scale-105">
+                    <img src="./assets/B3.jpg" alt="Yearly Package" class="w-full h-auto">
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Video Section 1 -->
+    <section class="py-16 sm:py-20 bg-[#181745]">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12 sm:mb-16">
+                <h2 class="text-2xl sm:text-3xl md:text-4xl font-bold text-white mb-4">طريقة الطرق في قناه الأوبشن الخاصه</h2>
+            </div>
+            <div class="flex justify-center items-center">
+                <video controls class="w-full max-w-4xl h-auto rounded-xl shadow-lg">
+                    <source src="./assets/OptionVid.mp4" type="video/mp4">
+                    متصفحك لا يدعم تشغيل الفيديو
+                </video>
+            </div>
+        </div>
+    </section>
+
+    <!-- PURE Indicator Section -->
+    <section class="py-16 sm:py-20 bg-[#181745]">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12 sm:mb-16">
+                <h2 class="text-2xl sm:text-3xl md:text-4xl font-bold text-white mb-6">مؤشر بيور… لما النتائج تتكلم بدل الدعاية</h2>
+                <p class="text-sm sm:text-base text-gray-200 leading-relaxed max-w-3xl mx-auto mb-6">
+                    في عالم التداول… كثير وعود، كثير كلام، وكثير أدوات ما تقدّم تغيير حقيقي.<br>
+                    لكن مع مؤشر PURE الوضع مختلف تمامًا.<br>
+                    الناس هي اللي تنطق بالحق… وتشوف الصفقات قبل ما تتكلّم عنها.
+                </p>
+                <div class="mt-6 text-left max-w-3xl mx-auto space-y-2 text-sm sm:text-base text-gray-200 mb-6">
+                    <p>✔️ إشارات واضحة بدون تعقيد</p>
+                    <p>✔️ دخول وخروج محسوب بدقة</p>
+                    <p>✔️ موازنة بين الربح والسيطرة على المخاطرة</p>
+                    <p>✔️ نتائج يقدر أي واحد يلمسها بنفسه</p>
+                </div>
+                <p class="text-sm sm:text-base text-gray-200 leading-relaxed max-w-3xl mx-auto font-semibold">
+                    مؤشر بيور ما صنعناه للتجربة…<br>
+                    صنعناه ليكون سلاحك الأقوى في السوق<br>
+                    والحمد لله… صوت الناس أكبر دليل 🔥<br>
+                    من بيور – وعي قبل الأرباح 💛
+                </p>
+            </div>
+            <div class="flex justify-center items-center">
+                <video controls class="w-full max-w-4xl h-auto rounded-xl shadow-lg">
+                    <source src="./assets/LastVid.mp4" type="video/mp4">
+                    متصفحك لا يدعم تشغيل الفيديو
+                </video>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Video Section -->
+    <section class="py-16 sm:py-20 bg-[#181745]">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12 sm:mb-16">
+                <h2 class="text-2xl sm:text-3xl md:text-4xl font-bold text-white mb-4">تعالوا نشوف الحقيقة من الناس اللي جربت بنفسها</h2>
+                <p class="text-sm sm:text-base text-gray-200 leading-relaxed max-w-3xl mx-auto">
+                    حنا في قناة بيور ما نحب الكلام الكثير… نحب الأرقام و شهادة الواقع.<br>
+                    آراء المشتركين عندنا ما هي مجاملة ولا تسويق…<br>
+                    هي صوت ناس دخلوا، التزموا، وشافوا الفرق في تداولهم 👊🔥
+                </p>
+            </div>
+            <div class="flex justify-center items-center">
+                <video controls class="w-full max-w-3xl h-auto rounded-xl shadow-lg">
+                    <source src="./assets/Audiance.mp4" type="video/mp4">
+                    متصفحك لا يدعم تشغيل الفيديو
+                </video>
+            </div>
+        </div>
+    </section>
+
+    <!-- Telegram Section -->
+    <section class="py-16 sm:py-20 bg-gradient-to-b from-[#181745] via-[#1a1853] to-[#181745]">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center">
+                <h2 class="text-2xl sm:text-3xl md:text-4xl font-bold text-white mb-6">وإذا تبي تتأكد بنفسك؟</h2>
+                <p class="text-sm sm:text-base md:text-lg text-gray-200 mb-8 max-w-2xl mx-auto">
+                    قناتنا في التليقرام مفتوحة لكم… تعال شوف كلام الجمهور وآراء المشتركين مباشر وبدون رتوش.<br>
+                    النتائج ما نخبّيها… النتائج نفتخر فيها.
+                </p>
+            </div>
+            <div class="flex justify-center items-center">
+                <a href="https://t.me/ikihhw" class="inline-flex items-center justify-center transition transform hover:scale-110">
+                    <i class="fa-brands fa-telegram text-5xl sm:text-6xl text-primary-400 hover:text-primary-300"></i>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Certificates Section -->
+    <section class="py-16 sm:py-20 bg-[#181745]">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12 sm:mb-16">
+                <h2 class="text-2xl sm:text-3xl md:text-4xl font-bold text-white mb-4">شهادات وتوثيقات</h2>
+                <p class="text-base sm:text-lg text-gray-300">نحن فخورون بتوثيق أعمالنا والحفاظ على أعلى معايير الجودة والشفافية</p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Certificate 1 -->
+                <div class="group">
+                    <div class="bg-gradient-to-br from-white via-gray-50 to-gray-100 rounded-2xl p-8 sm:p-10 shadow-lg hover:shadow-2xl transition duration-300 transform hover:scale-105 h-full flex flex-col">
+                        <div class="bg-gradient-to-br from-primary-100 to-primary-50 w-16 h-16 rounded-xl flex items-center justify-center mb-6">
+                            <i class="fas fa-file-pdf text-primary-600 text-2xl"></i>
+                        </div>
+                        <h3 class="text-lg sm:text-xl font-bold text-gray-900 mb-3">شهادة توثيق الأعمال</h3>
+                        <p class="text-sm sm:text-base text-gray-600 mb-6 flex-grow">
+                            وثيقة رسمية تؤكد جودة خدماتنا والتزامنا بأعلى معايير الشفافية والمهنية في مجال التداول
+                        </p>
+                        <a href="شهادة توثيق الاعمال.pdf" download class="inline-flex items-center gap-2 bg-gradient-to-r from-primary-500 to-primary-600 hover:from-primary-600 hover:to-primary-700 text-white px-6 py-3 rounded-lg font-semibold transition transform hover:translate-x-1">
+                            <i class="fas fa-download"></i>
+                            <span>تحميل الشهادة</span>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Certificate 2 -->
+                <div class="group">
+                    <div class="bg-gradient-to-br from-white via-gray-50 to-gray-100 rounded-2xl p-8 sm:p-10 shadow-lg hover:shadow-2xl transition duration-300 transform hover:scale-105 h-full flex flex-col">
+                        <div class="bg-gradient-to-br from-blue-100 to-blue-50 w-16 h-16 rounded-xl flex items-center justify-center mb-6">
+                            <i class="fas fa-check-circle text-blue-600 text-2xl"></i>
+                        </div>
+                        <h3 class="text-lg sm:text-xl font-bold text-gray-900 mb-3">موثوقية معتمدة</h3>
+                        <p class="text-sm sm:text-base text-gray-600 mb-6 flex-grow">
+                            فريقنا معتمد ومختص في تحليل الأسواق المالية مع سجل حافل بالنجاحات والنتائج المثبتة
+                        </p>
+                        <div class="inline-flex items-center gap-2 text-primary-600 font-semibold">
+                            <i class="fas fa-check"></i>
+                            <span>معتمد وموثق</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Certificate 3 -->
+                <div class="group">
+                    <div class="bg-gradient-to-br from-white via-gray-50 to-gray-100 rounded-2xl p-8 sm:p-10 shadow-lg hover:shadow-2xl transition duration-300 transform hover:scale-105 h-full flex flex-col">
+                        <div class="bg-gradient-to-br from-green-100 to-green-50 w-16 h-16 rounded-xl flex items-center justify-center mb-6">
+                            <i class="fas fa-star text-green-600 text-2xl"></i>
+                        </div>
+                        <h3 class="text-lg sm:text-xl font-bold text-gray-900 mb-3">تصنيف ممتاز</h3>
+                        <p class="text-sm sm:text-base text-gray-600 mb-6 flex-grow">
+                            نتمتع بتقييمات عالية جداً من آلاف المتداولين الراضين عن خدماتنا والذين يثقون بنا
+                        </p>
+                        <div class="flex gap-1 text-yellow-400">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Warning Section -->
+    <section class="py-12 sm:py-16 bg-gradient-to-r from-primary-600 via-primary-700 to-primary-800 text-white">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <h2 class="text-xl sm:text-2xl md:text-3xl font-bold mb-4 sm:mb-6">⚠️ تنبيه مهم</h2>
+            <p class="text-sm sm:text-base md:text-lg mb-4 leading-relaxed">
+                هذه خدمة رقمية غير قابلة للاسترجاع. بعد الشراء والوصول إلى الخدمة، لا يمكن استرجاع المبلغ. تأكد من أنك تفهم مخاطر التداول قبل الاشتراك.
+            </p>
+            <p class="text-xs sm:text-sm md:text-base text-primary-100 font-semibold">
+                ⚠️ التداول ينطوي على مخاطر عالية وقد تفقد رأس مالك بالكامل
+            </p>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-gray-300 py-12 sm:py-16">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8 mb-8">
+                <div>
+                    <div class="flex items-center space-x-2 space-x-reverse mb-4">
+                        <div class="w-8 h-8 bg-gradient-to-br from-primary-400 to-primary-600 rounded-lg flex items-center justify-center flex-shrink-0">
+                            <img src="./assets/Logo.png" alt="Logo" class="w-6 h-6">
+                        </div>
+                        <span class="font-bold text-white text-sm sm:text-base">أكاديمية بيور</span>
+                    </div>
+                    <p class="text-xs sm:text-sm text-gray-400">منصة متخصصة في تعليم التداول والإشارات المحترفة</p>
+                </div>
+                <div>
+                    <h4 class="font-bold text-white mb-4 text-sm sm:text-base">الروابط</h4>
+                    <ul class="space-y-2 text-xs sm:text-sm">
+                        <li><a href="#" class="hover:text-primary-400 transition">عن النا</a></li>
+                        <li><a href="#" class="hover:text-primary-400 transition">الدورات</a></li>
+                        <li><a href="#" class="hover:text-primary-400 transition">المؤشرات</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="font-bold text-white mb-4 text-sm sm:text-base">تابعنا</h4>
+                    <ul class="space-y-2 text-xs sm:text-sm">
+                        <li><a href="https://t.me/ikihhw" class="hover:text-primary-400 transition">تيليقرام</a></li>
+                        <li><a href="#" class="hover:text-primary-400 transition">تويتر</a></li>
+                        <li><a href="#" class="hover:text-primary-400 transition">انستقرام</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="border-t border-gray-800 pt-8 text-center text-xs sm:text-sm text-gray-400">
+                <p>جميع الحقوق محفوظة © 2025 أكاديمية بيور</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
